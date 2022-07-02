@@ -35,6 +35,7 @@
         "Write-Output \"[post_install] Removing temporary preserved folder\"; Remove-Item \"$env:TEMP\\__scoop__preserved\" -Recurse -Force"
     ],
     "checkver": {
-        "github": "https://github.com/tablacus/TablacusExplorer"
+        "url": "https://github.com/tablacus/TablacusExplorer/releases/download/22.6.11/te220611.zip",
+        "re": "\d+?\.\d+?\.\d+?"
     }
 }
