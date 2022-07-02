@@ -36,6 +36,6 @@
     ],
     "checkver": {
         "url": "https://github.com/tablacus/TablacusExplorer/releases/download/22.6.11/te220611.zip",
-        "regex": "\d+?\.\d+?\.\d+?"
+        "regex": "\d+\.\d+\.\d+"
     }
 }
