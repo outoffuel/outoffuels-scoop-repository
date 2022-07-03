@@ -37,4 +37,9 @@
     "checkver": {
         "github": "https://github.com/tablacus/TablacusExplorer",
     }
+    "autoupdate": {
+        "github": "https://github.com/tablacus/TablacusExplorer",
+        "hash": ""
+    }
+
 }
