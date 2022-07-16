@@ -4,17 +4,9 @@
   "license": "MIT",
   "url": "https://github.com/Jessecar96/SteamDesktopAuthenticator/releases/download/1.0.10/SDA-1.0.10.zip",
   "hash": "",
-  "architecture": {
-      "64bit": {
-          "bin": ["Steam Desktop Authenticator.exe", "SteamDesktopAuthenticator"],
-          "shortcuts": [
-              [
-                  "Steam Desktop Authenticator.exe",
-                  "SteamDesktopAuthenticator"
-              ]
-          ]
-      },
-  },
+
+  "bin": "Steam Desktop Authenticator.exe",
+  "shortcuts": "SDA.exe",
   "pre_install": [
       "if((Test-Path(\"$env:TEMP\\__scoop__preserved\"))) { Write-Output \"[pre_install] Removing temporary preserved folder\"; Remove-Item \"$env:TEMP\\__scoop__preserved\" -Recurse -Force }",
       "Write-Output \"[pre_install] Creating temporary preserved folder\"; New-Item \"$env:TEMP\\__scoop__preserved\" -type directory | Out-Null",
