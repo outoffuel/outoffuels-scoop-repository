@@ -5,15 +5,12 @@
   "url": "https://github.com/dangeredwolf/ModernDeck/releases/download/v9.4.5/ModernDeck_x64.exe",
   "hash": "",
   "bin": "ModernDeck.exe",
-  "pre_install": [
-      "if((Test-Path(\"$env:TEMP\\__scoop__preserved\"))) { Write-Output \"[pre_install] Removing temporary preserved folder\"; Remove-Item \"$env:TEMP\\__scoop__preserved\" -Recurse -Force }",
-      "Write-Output \"[pre_install] Creating temporary preserved folder\"; New-Item \"$env:TEMP\\__scoop__preserved\" -type directory | Out-Null",
-      "Write-Output \"[pre_install] Preserving original files\"; Copy-Item \"$dir\\*\" \"$env:TEMP\\__scoop__preserved\" -Recurse -Force"
-  ],
-  "post_install": [
-      "Write-Output \"[post_install] Overwriting from original files\"; Copy-Item \"$env:TEMP\\__scoop__preserved\\*\" \"$dir\" -Recurse -Force",
-      "Write-Output \"[post_install] Removing temporary preserved folder\"; Remove-Item \"$env:TEMP\\__scoop__preserved\" -Recurse -Force"
-  ],
+  "installer": {
+        "script": [
+            "$Env:__COMPAT_LAYER='RunAsInvoker'",
+            "Invoke-ExternalCommand \"$dir\\$fname\" -ArgumentList @('/S', \"/D=$dir\") | Out-Null"
+        ]
+    },
   "checkver": {
       "github": "https://github.com/dangeredwolf/ModernDeck"
   },
