@@ -1,0 +1,20 @@
+{
+  "version": "1.0.74",
+  "license": "MIT",
+  "url": "https://github.com/hello-efficiency-inc/raven-reader/releases/download/v1.0.74/Raven-Reader-Setup-1.0.74.exe",
+  "hash": "",
+  "bin": "Raven Reader.exe",
+  "installer": {
+    "script": [
+      "$Env:__COMPAT_LAYER='RunAsInvoker'",
+      "Invoke-ExternalCommand \"dir\\$fname\" -ArgumentList @('/S', \"/D=$dir=\") | Out-Null"
+    ]
+  },
+  "checkver": {
+    "github": "https://github.com/hello-efficiency-inc/raven-reader"
+  },
+  "autoupdate": {
+    "github": "https://github.com/hello-efficiency-inc/raven-reader",
+    "hash": ""
+  }
+}
