@@ -3,7 +3,7 @@
   "license": "MIT",
   "url": "https://github.com/hello-efficiency-inc/raven-reader/releases/download/v1.0.74/Raven-1.0.74_portable.exe",
   "hash": "",
-  "pre_install": "Rename-Item $dir\\Raven-.*_portable.exe RavenReader.exe",
+  "pre_install": "Rename-Item \"$dir\\Raven-${version}_portable.exe\" 'RavenReader.exe'"
   "bin": "RavenReader.exe",
   "checkver": {
     "github": "https://github.com/hello-efficiency-inc/raven-reader"
