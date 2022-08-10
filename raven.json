@@ -4,7 +4,13 @@
   "url": "https://github.com/hello-efficiency-inc/raven-reader/releases/download/v1.0.74/Raven-1.0.74_portable.exe",
   "hash": "",
   "pre_install": "Rename-Item \"$dir\\Raven-${version}_portable.exe\" 'RavenReader.exe'",
-  "bin": "RavenReader.exe",
+  "bin": ["RavenReader.exe", "ravenreader"],
+  "shortcuts": [
+    [
+      "RavenReader.exe",
+      "Raven Reader"
+    ]
+  ],
   "checkver": {
     "github": "https://github.com/hello-efficiency-inc/raven-reader"
   },
