@@ -1,0 +1,20 @@
+{
+    "homepage": "https://mail.tutanota.com",
+    "version": "3.98.4",
+    "license": "GPL-3.0",
+    "url": "https://mail.tutanota.com/desktop/tutanota-desktop-win.exe",
+    "hash": "",
+    "bin": "Tutanota Desktop.exe",
+    "shortcuts": [
+        [
+            "Tutanota Desktop.exe",
+            "Tutanota Desktop"
+        ]
+    ],
+    "installer": {
+        "script": [
+            "$Env:__COMPAT_LAYER='RunAsInvoker'",
+            "Invoke-ExternalCommand \"$dir\\$fname\" -ArgumentList @('/S', \"/D=$dir\") | Out-Null"
+        ]
+    }
+}

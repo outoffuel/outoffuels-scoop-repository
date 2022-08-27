@@ -14,7 +14,7 @@
                 ]
             ]
         },
-         "32bit": {
+        "32bit": {
             "bin": [["TE32.exe", "te"], ["TE32.exe", "tablacus"]],
             "shortcuts": [
                 [
@@ -41,5 +41,4 @@
         "github": "https://github.com/tablacus/TablacusExplorer",
         "hash": ""
     }
-
 }
