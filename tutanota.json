@@ -12,9 +12,13 @@
         ]
     ],
     "installer": {
-        "script": [
-            "$Env:__COMPAT_LAYER='RunAsInvoker'",
-            "Invoke-ExternalCommand \"$dir\\$fname\" -ArgumentList @('/S', \"/D=$dir\") | Out-Null"
+        "args": [
+            "/verysilent",
+            "/nocancel",
+            "/norestart"
         ]
+    },
+    "uninstaller": {
+        "script": "& \"$env:ProgramFiles\\Tutanota Desktop\\Uninstall Tutanota Desktop.exe\" /verysilent /nocancel /norestart"
     }
 }
