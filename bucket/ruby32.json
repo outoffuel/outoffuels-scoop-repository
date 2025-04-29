@@ -10,12 +10,12 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-3.2.8-1/rubyinstaller-3.2.8-1-x64.7z",
-            "hash": "",
+            "hash": "e37172bc960a22b1fda9603bea617625b5a1af48d009844818e85eaa00684962",
             "extract_dir": "rubyinstaller-3.2.8-1-x64"
         },
         "32bit": {
             "url": "https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-3.2.8-1/rubyinstaller-3.2.8-1-x86.7z",
-            "hash": "",
+            "hash": "49d95c4770fc9e770f396ba5d57eaeb2ab63ae191df5c2dc1c4715bcfed60639",
             "extract_dir": "rubyinstaller-3.2.8-1-x86"
         }
     },
